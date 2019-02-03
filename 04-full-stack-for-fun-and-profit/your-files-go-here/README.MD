@@ -1,0 +1,1 @@
+This folder is ignored by git. you can put your files here
