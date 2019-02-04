@@ -1,55 +1,16 @@
 body {
     padding: 50px;
-    display: flex; /*we are using flex display. it is somewhat more intuitive then other displays.*/
+    display: flex;
+    /*we are using flex display. it is somewhat more intuitive then other displays.*/
     flex-direction: column;
     overflow: hidden;
     text-align: center;
-}
-
-/* this is the layout for the buttins in the 3rd block in our main block, */
-.social button 
-{
-    width: 300px;
-    height: 48px;
-    margin: 5px;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.b1-image-and-button {
-    text-align: left;
-    margin-bottom: 20px;
-}
-.b1-image-and-button button {
-    float: right;
-}
-
-.b3-main {
-    height: 250px;
-    width: 100%;
-    margin: 30px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 10vh;
-}
-
-
-span.login, span.social {
-    width: 360px;
 }
 
 .divider {
     height: 100%;
     width: 1px;
     margin: 0 71px;
-}
-
-
-.login input {
-    margin: 15px 0;
-    padding: 5px;
-    width: 100%;
 }
 
 .login button {
@@ -59,20 +20,67 @@ span.login, span.social {
     margin-top: 30px;
 }
 
-input[type="checkbox"] {
+.b3-main {
+    /*our main block*/
+    height: 250px;
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.social
+{
+    padding-top: 45px
+}
+
+/*******e01 c02********/
+/*we want inner blocks of main to be 360 wide. choose the right selector*/
+select many {
+    width: 360px;
+}
+
+text inputs{
+    margin: 15px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+/**only the checkbox should be 20 wide. can you help?*/
+input {
     width: 20px
 }
 
-.align-left {
+/* these 2 will creat a layout of text on one side and an inline element on the other*/
+an element {
     text-align: left;
 }
 
-.align-left > span {
+an element and its direct child {
     float: right;
     vertical-align: middle;
     margin-top: 12px;
 }
 
-.social {
-    padding-top: 45px
+
+/* this is the layout for the buttins in the 3rd block in our main block,
+    Add something to the selector to make sure only these buttons are selected */
+button {
+    width: 300px;
+    height: 48px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* One of our top level blocks needs and image on the left and a button on the right replace “?” with the right class name */
+.classname {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.classname button {
+    float: right;
 }
