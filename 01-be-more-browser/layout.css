@@ -1,20 +1,25 @@
 body {
     padding: 50px;
-    display: flex;
+    display: flex; /*we are using flex display. it is somewhat more intuitive then other displays.*/
     flex-direction: column;
     overflow: hidden;
+    text-align: center;
 }
 
-body > div {
-    width: 100%;
-    text-align: center;
+/* this is the layout for the buttins in the 3rd block in our main block, */
+.social button 
+{
+    width: 300px;
+    height: 48px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .b1-image-and-button {
     text-align: left;
     margin-bottom: 20px;
 }
-
 .b1-image-and-button button {
     float: right;
 }
@@ -47,13 +52,6 @@ span.login, span.social {
     width: 100%;
 }
 
-
-button {
-    padding: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .login button {
     padding: 8px 24px 14px 24px;
     width: 170px;
@@ -77,10 +75,4 @@ input[type="checkbox"] {
 
 .social {
     padding-top: 45px
-}
-
-.social button {
-    width: 300px;
-    height: 48px;
-    margin: 5px;
 }
