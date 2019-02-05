@@ -11,10 +11,4 @@ function logger(element, title, content) {
     "color:unset"
   );
 }
-Array.prototype.slice
-  .call(document.querySelectorAll(".login input"))
-  .forEach(element => {
-    element.addEventListener("blur", function({ target }) {
-      logger(target.placeholder, "User Typed", target.value);
-    });
-  });
+
