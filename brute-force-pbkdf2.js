@@ -33,3 +33,8 @@ function generate(targetLength, callback, generated=""){
  * a83e2e4672df312d9ac2d572daa1d3642ff298140128fd9e46fb8be4f85fbe7e71113ac20a917b9225598462aeef99889ec9d6269dca150bbfcb1ef834b932ba
  * Can you find out what is the pincode?
  */
+generate(4, (generated)=>getAPromiseOf10IterationsOf64ByteSha512AsHex(generated).then((hash)=>{
+    if (hash==="a83e2e4672df312d9ac2d572daa1d3642ff298140128fd9e46fb8be4f85fbe7e71113ac20a917b9225598462aeef99889ec9d6269dca150bbfcb1ef834b932ba"){
+        console.log(`password is ${generated}`);
+    }
+}))
