@@ -58,3 +58,4 @@ typings/
 .env
 
 your-files-go-here/
+node_modules
